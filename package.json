@@ -1,0 +1,20 @@
+{
+  "name": "node-thunder-download",
+  "version": "1.0.0",
+  "description": "node调用迅雷下载小工具",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "thunder",
+    "thunder",
+    "node"
+  ],
+  "author": "derenmiao",
+  "license": "MIT",
+  "dependencies": {
+    "open": "^8.4.0"
+  }
+}
