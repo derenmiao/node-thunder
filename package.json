@@ -1,6 +1,6 @@
 {
   "name": "node-thunder",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "node调用迅雷下载小工具",
   "main": "index.mjs",
   "type": "module",
