@@ -1,5 +1,5 @@
-import ThunderJsSdk from "./ThunderJsSdk.js";
+import ThunderJsSdk from "./ThunderJsSdk.js"
 
-export {
+exports = module.exports = {
   ThunderJsSdk
 }
