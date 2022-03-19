@@ -1,4 +1,4 @@
-import ThunderJsSdk from "./ThunderJsSdk.js"
+import { ThunderJsSdk } from "./index.js"
 
 function main() {
   const opt = {

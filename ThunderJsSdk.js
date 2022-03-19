@@ -7,8 +7,8 @@ import open from 'open'
 export default class ThunderJsSdk {
   constructor(props) {
     this.states = props
-    this.port = 9090  // 默认9090
-    this.closeTime = 5000 // 服务关闭时间
+    this.port = 9099  // 默认9099
+    this.closeTime = 9000 // 服务关闭时间 9000 ms
   }
 
   // 转成合适的字符串
@@ -49,7 +49,7 @@ let outTime = setTimeout(function() {
   const downDom = document.getElementById('js_xl_manual_download_btn')
   downDom.click()
   clearTimeout(outTime)
-}, 2000)
+}, 3500)
 })()
 </script>
 </html>
@@ -69,7 +69,7 @@ let outTime = setTimeout(function() {
   }
 
   run (props = {}) {
-    const { port = 9090, closeTime = 5000 } = props
+    const { port = 9099, closeTime = 9000 } = props
     this.port = port
     this.closeTime = closeTime
 
