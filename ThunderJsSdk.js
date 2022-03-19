@@ -30,6 +30,7 @@ export default class ThunderJsSdk {
 
   }
 
+  // 渲染html
   renderTemplate(renderString) {
 const template = `
 <!DOCTYPE html>
