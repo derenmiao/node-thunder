@@ -1,4 +1,4 @@
-import ThunderJsSdk from "./ThunderJsSdk.mjs";
+import ThunderJsSdk from "./ThunderJsSdk.js";
 
 function main() {
   const opt = {
