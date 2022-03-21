@@ -10,10 +10,10 @@ $ npm i --save node-thunder
 
 ------
 ### 🔨 使用
-目前仅支持 ESModule 导入, 对于 CommonJS 还未支持.
 
 ```js
 import { ThunderJsSdk } from 'node-thunder'
+// const { ThunderJsSdk } = require('node-thunder')
 
 const opt = {
   downloadDir: '下载目录',
@@ -30,7 +30,7 @@ new ThunderJsSdk(opt).run({ port: 3033, closeTime: 3000 })
 
 
 🕯 支持单文件和批量文件下载，相关设置请查阅：[迅雷下载 JS-SDK](http://open.thunderurl.com/#/)
-```
+```js
 // 创建单个任务
 const opt = {
   downloadDir: '', // 指定当前任务的下载目录名称，迅雷会在用户剩余空间最大的磁盘根目录中创建这个目录。【若不填此项，会下载到用户默认下载目录】
@@ -41,7 +41,7 @@ const opt = {
 });
 ```
 当 tasks 字段指定多个任务时，会创建批量任务。
-```
+```js
 const opt = {
   downloadDir: '', // 指定批量任务的下载目录名称，迅雷会在用户剩余空间最大的磁盘根目录中创建这个目录。【若不填此项，会下载到用户默认下载目录】
   taskGroupName: '', // 指定任务组名称，可将批量任务合并成类似BT任务的【任务组】，迅雷将在下载目录中创建同名子文件夹保存所有下载文件。【推荐填写。若不填此项，迅雷下载列表会显示所有本次创建的下载任务，可能会使用户的下载列表显得杂乱】
@@ -72,14 +72,3 @@ const opt = {
   ]
 }
 ```
-
-------
-### 🤝 参与共建
-```exec
-$ git clone git@github.com:derenmiao/node-thunder.git
-$ cd node-thunder
-$ npm install
-$ node test.mjs
-```
-
-第二版希望不希望启动浏览器唤醒迅雷
